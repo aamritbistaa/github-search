@@ -1,13 +1,132 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: #FDF5F5;
+  overflow-x: hidden;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.HeaderContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.HeaderContainer .HeaderContainer-Wrapper h1{
+  margin: 20px;
+  padding: 18px;
+  color: black;
+  border-radius: 25px;
+  background-color: white;
+}
+.InputContainer{
+  display: flex;
+  justify-content: center;
+}
+.InputContainer .InputContainer-Wrapper form{
+  background-color: white;
+  border-radius: 25px;
+  margin: 16px;
+  padding:  18px 36px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.InputContainer form input,button{
+  padding: 12px;
+  border-radius: 5px;
+  border: 4px solid transparent;
+
+}
+.InputContainer form 
+button:hover,input:hover {
+  background-color: #ef7a7a;
+  border: 4px solid salmon;
+  color: white;
+}
+
+input:focus, button:focus{
+  background-color: #ef7a7a;
+  border: 4px solid salmon;
+  color: white;
+}
+
+.ListContainer{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ListContainer .UserProfileCard{
+  background-color: rgb(198, 179, 179);
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.ListContainer .UserProfileCard img{
+  height: 100px;
+}
+.ListContainer .UserProfileCard .detail,.image{
+  padding:0px 10px;
+  background-color: rgb(198, 179, 179);
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ListContainer .UserProfileCard .detail .element {
+  background-color: rgb(198, 179, 179);
+  font-weight: 600;
+    font-size: 18px;
+    color: rgb(56, 49, 205);
+  
+}
+.ListContainer .UserProfileCard .detail .element a{
+  background-color: rgb(198, 179, 179);
+  font-size: 36px;
+  text-decoration: none;
+}
+
+.ListContainer .UserRepositories{
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  /* overflow-wrap: break-word; */
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.ListContainer h1{
+  padding: 25px;
+}
+/* .UserRepositories */
+
+.ListContainer .UserRepositories .RepoCard{
+  background-color: white;
+  color: #ef7a7a;
+  padding: 25px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.RepoCard h3{
+  color: rgb(198, 179, 179);
+  background-color: white;
+
+}
+
+.RepoCard a{
+  text-decoration: none;
+  color: black;
+  background-color: white;
 }
