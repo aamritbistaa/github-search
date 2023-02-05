@@ -1,6 +1,6 @@
 import React from "react";
 import "../index.css";
-import { FaUserTie } from "react-icons/fa";
+import { SiKnowledgebase } from "react-icons/si";
 
 const List = ({ profileData, repoData }) => {
   console.log(profileData, "profile data in child");
@@ -24,7 +24,7 @@ const List = ({ profileData, repoData }) => {
               {profileData.blog && (
                 <div className="element">
                   <a href={profileData.blog}>
-                    <FaUserTie />
+                    <SiKnowledgebase />
                   </a>
                 </div>
               )}
